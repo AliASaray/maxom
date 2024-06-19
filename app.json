@@ -1,0 +1,47 @@
+{
+    "name": "استخـــــــــراج مقصوم",
+    "description": "A Telegram Bot to get Telethon and Pyrogram String Session.",
+    "keywords": [
+        "python3",
+        "telegram",
+        "session",
+        "stringbot",
+        "telegram-bot",
+        "pyrogram",
+        "telethon"
+    ],
+    "repository": "https://github.com/Ahmedhhhhhgg/sst",
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "Fill your user id here. (Must be integer)",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get this value from cloud.mongodb.com",
+        "value": "mongodb://maksome:<password>@<hostname>/?ssl=true&replicaSet=atlas-cpz1vc-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          }
+      ],
+      "stack": "container"
+  }
