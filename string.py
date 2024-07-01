@@ -103,7 +103,7 @@ async def string_session(
     try:
         phone_number = await Anony.ask(
             identifier=(message.chat.id, user_id, None),
-            text="<b>✦ 📞 الرجـاء إرسـال رقـم هاتفـك</b>\n<b>مثال : +96407706545013</b>",
+            text="<b>✦ 📞 الرجـاء إرسـال رقـم هاتفـك</b>\n<b>مثال : +96407706545813</b>",
             filters=filters.text,
             timeout=300,
         )
@@ -231,7 +231,7 @@ async def string_session(
                 link_preview=False,
                 parse_mode="html",
             )
-            await client(JoinChannelRequest("@UUUJD"))
+            await client(JoinChannelRequest("@Tepthon"))
         else:
             string_session = await client.export_session_string()
             await client.send_message(
@@ -239,7 +239,7 @@ async def string_session(
                 txt.format(ty, string_session, SUPPORT_CHAT),
                 disable_web_page_preview=True,
             )
-            await client.join_chat('Tepthon')
+            await client.join_chat("Tepthon")
     except KeyError:
         pass
     try:
