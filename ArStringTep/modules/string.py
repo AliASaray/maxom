@@ -239,7 +239,7 @@ async def string_session(
                 txt.format(ty, string_session, SUPPORT_CHAT),
                 disable_web_page_preview=True,
             )
-            await client.join_chat("مفصوم")
+            await client.join_chat("mxsoom")
     except KeyError:
         pass
     try:
